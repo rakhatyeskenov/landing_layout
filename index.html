@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;1,400;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;1,400;1,600;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    <title>Landing ITS</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header__left">
+                <img src="./img/purple_triangle.png" alt="">
+                <h2 class="logo__name">penrose</h2>
+            </div>
+            <nav class="header__right">
+                <ul class="nav-list">
+                    <li class="home__hover" style="background: none; color: #EECAFC"><a href="#"><span
+                                class="home__link">HOME</span></a></li>
+                    <li><a href="#NewCollections">NEW COLLECTIONS</a></li>
+                    <div class="dropdown lock">
+                        <button class="dropbtn">STORE
+                            <!-- <i class="fas fa-chevron-down arrow-down"></i>
+                        <i class="fas fa-chevron-up arrow-up"></i> -->
+                            <a href="#" class="lock">
+                                <i class="icon-unlock fas fa-chevron-down"></i>
+                                <i class="icon-lock fas fa-chevron-up"></i>
+                            </a>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#Women">Women</a>
+                            <a href="#Men">Men</a>
+                            <a href="#Kids">Kids</a>
+                        </div>
+                    </div>
+                    <li><a href="#">CONTACTS</a></li>
+                </ul>
+            </nav>
+            <nav class="header__right header__right__mob" id="hamnav">
+                <!-- <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger" /> -->
+                <ul class="nav-list" id="myLinks">
+                    <li class="home__hover" style="background: none; color: #EECAFC"><a href="#"><span
+                                class="home__link">HOME</span></a></li>
+                    <li><a href="#NewCollections">NEW COLLECTIONS</a></li>
+                    <div class="dropdown lock">
+                        <button class="dropbtn">STORE
+                            <!-- <i class="fas fa-chevron-down arrow-down"></i>
+                            <i class="fas fa-chevron-up arrow-up"></i> -->
+                            <a href="#" class="lock">
+                                <i class="icon-unlock fas fa-chevron-down"></i>
+                                <i class="icon-lock fas fa-chevron-up"></i>
+                            </a>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#Women">Women</a>
+                            <a href="#Men">Men</a>
+                            <a href="#Kids">Kids</a>
+                        </div>
+                    </div>
+                    <!-- </li> -->
+                    <li><a class="contacts" href="#">CONTACTS</a></li>
+                </ul>
+                <div class="mob__menu__icon">
+                    <a href="javascript:void(0);" class="icon" onclick="mobileNav()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="title">
+                <img class="title__img" src="./img/Title.png" alt="">
+            </div>
+            <div class="model">
+                <img class="person__img" src="./img/model.png" alt="">
+            </div>
+            <div class="slides">
+                <blockquote class="mySlides slide1 blockquote blockquote__icon">
+                    <p class="blockquote__text">
+                        Blandit et augue nulla suscipit ut ut quis ad feugiat ut luptatum, consequat, lobortis, aliquip
+                        dolore, iriure veniam te dolor aliquip.
+                    </p>
+                    <p class="blockquote__text quote__author"> — Emerson Hawkins</p>
+                </blockquote>
+
+                <blockquote class="mySlides slide2 blockquote blockquote__icon">
+                    <p class="blockquote__text">
+                        <span id="quote2__name">
+                            Hendrerit aliquam odio accumsan ea commodo augue dolore zzril commodo facilisis in tation
+                            nulla
+                            iriure dolore feugait facilisis praesent.
+                        </span>
+                    </p>
+                    <p id="quote2__hide2" class="blockquote__text quote__author">
+                        <span id="quote2__price">— Terry Matthews</span>
+                    </p>
+                </blockquote>
+
+                <blockquote class="mySlides slide3 blockquote blockquote__icon">
+                    <p class="blockquote__text">
+                        Consequat aliquip lobortis consectetuer adipiscing volutpat ad autem veniam hendrerit consequat
+                        te
+                        quis suscipit dolor consequat in. Duis ex, diam hendrerit.
+                    </p>
+                    <p class="blockquote__text quote__author"> — Reggie Henry</p>
+                </blockquote>
+                <a class="prev" id="left__arrow" onclick="plusSlides(-1)">
+                    ❮
+                </a>
+                <a class="next" id="right__arrow" onclick="plusSlides(1)">
+                    ❯
+                    <!-- <img src="https://icons8.com/icon/100033/chevron-left" alt=""> -->
+                </a>
+
+                <!-- <i class="fas fa-chevron-down arrow-down"></i>
+                <i class="fas fa-chevron-up arrow-up"></i> -->
+
+                <div class="dot__container">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="video__obj">
+                <a href="https://www.youtube.com/watch?v=gNOEUbqkGUM&ab_channel=zara" target="_blank">
+                    <div class="video__icon">
+                        <div class="video__icon__in">
+                            <i class="fa fa-play-circle" style="font-size:48px;color:grey;"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Additional task - Video part -->
+        <!-- <iframe width="250" height="150" src="https://www.youtube.com/embed/gNOEUbqkGUM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
